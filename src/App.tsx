@@ -14,7 +14,7 @@ function App() {
         }}
       >
         <Slide>
-          <h3>Software minero, pero Open Source</h3>
+          <h3>Minería, pero Open Source</h3>
           <p>Proyecto de Investigación para CC7910</p>
 
           <div
