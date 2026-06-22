@@ -52,9 +52,9 @@ function App() {
 
             <div className="r-stack">
               <img className="fragment fade-in-then-out" src="experiments/1.png" width="500" alt="" />
-              <img className="fragment fade-in-then-out" src="experiments/2.png" width="500" alt="" />
               <img className="fragment fade-in-then-out" src="experiments/3.png" width="500" alt="" />
               <img className="fragment fade-in-then-out" src="experiments/4.png" width="500" alt="" />
+              <img className="fragment fade-in-then-out" src="experiments/2.png" width="500" alt="" />
 
               <div
                 style={{
