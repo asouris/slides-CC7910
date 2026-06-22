@@ -1,6 +1,7 @@
 import { Deck, Slide } from '@revealjs/react';
 import 'reveal.js/reveal.css';
 import 'reveal.js/theme/white.css';
+import './App.css';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         }}
       >
         <Slide>
-          <h3>Minería, pero Open Source</h3>
+          <h2>Minería, pero Open Source</h2>
           <p>Proyecto de Investigación para CC7910</p>
 
           <div
@@ -28,9 +29,16 @@ function App() {
           </div>
         </Slide>
 
-        <Slide>
-          <h2>Contexto</h2>
-          <p></p>
+        <Slide backgroundImage='backgroundGeo.png' backgroundOpacity={0.4}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+            }}
+          >
+            <h2>Contexto</h2>
+          </div>
         </Slide>
 
         <Slide backgroundImage="image.png" backgroundOpacity={0.3}>
@@ -88,7 +96,7 @@ function App() {
         </Slide>
 
         <Slide>
-          <Slide backgroundVideo="brittle.mp4">
+          <Slide backgroundVideo="brittle.mp4" backgroundVideoLoop={true}>
             <h2
               style={{
                 backgroundColor: "#f3f3f2",
@@ -104,39 +112,60 @@ function App() {
               src="curve.png"
               alt=""
               style={{
-                width: "30vw",
+                width: "70%",
               }}
             />
           </Slide>
         </Slide>
-
-        <Slide>
-          <h2>¿Cuál es mi problema?</h2>
+        <Slide backgroundImage='backgroundGeo.png' backgroundOpacity={0.4}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+            }}
+          >
+            <h2>¿Cuál es mi problema?</h2>
+          </div>
+        </Slide>
+        <Slide backgroundImage='backgroundGeo.png' backgroundOpacity={0.1}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "start",
+            }}
+          >
+            <h2>El software propietario</h2>
+          </div>
         </Slide>
 
         <Slide>
-          <Slide>
-            <h2>El software propietario</h2>
-          </Slide>
 
           <Slide>
-            <h3>Software propietario: 3DEC</h3>
-            <ul>
-              <li>$$$$$$$</li>
-              <li>Licencias virtuales</li>
-              <li>API's sin mantención</li>
-            </ul>
+            <h3>3DEC</h3>
+            <div style={{display:"flex",justifyContent:"start", alignItems: "center", width:"100%"}}>
+                
+                <ul style={{width:"100%"}}>
+                  <li>$$$$$$$</li>
+                  <li>Licencias virtuales</li>
+                  <li>API's sin mantención</li>
+                </ul>
+                <img src='3dec2.png' style={{width: "100%"}}/>
+                
+            </div>
+            
           </Slide>
         </Slide>
 
         <Slide>
           <p>
-            ¿Es posible utilizar software Open Source para obtener curvas
-            esfuerzo-deformación similares a las de 3DEC?
+            <span style={{color:"red"}}>¿</span>Es posible utilizar software Open Source para obtener curvas
+            esfuerzo-deformación similares a las de 3DEC<span style={{color:"red"}}>?</span>
           </p>
         </Slide>
 
-        <Slide autoAnimate>
+        <Slide autoAnimate backgroundImage='backgroundGeo.png' backgroundOpacity={0.4}>
           <div
             style={{
               display: "flex",
@@ -148,7 +177,7 @@ function App() {
           </div>
         </Slide>
 
-        <Slide autoAnimate>
+        <Slide autoAnimate backgroundImage='backgroundGeo.png' backgroundOpacity={0.2}>
           <div
             style={{
               display: "flex",
@@ -161,7 +190,7 @@ function App() {
           </div>
         </Slide>
 
-        <Slide autoAnimate>
+        <Slide autoAnimate backgroundImage='backgroundGeo.png' backgroundOpacity={0.2}>
           <div
             style={{
               display: "flex",
@@ -181,7 +210,7 @@ function App() {
           </div>
         </Slide>
 
-        <Slide autoAnimate>
+        <Slide autoAnimate backgroundImage='backgroundGeo.png' backgroundOpacity={0.2}>
           <div
             style={{
               display: "flex",
@@ -292,7 +321,7 @@ function App() {
                   alignItems: "center",
                 }}
               >
-                <h3>3DEC</h3>
+                <h4>3DEC → </h4>
 
                 <div
                   style={{
@@ -302,8 +331,8 @@ function App() {
                     alignItems: "start",
                   }}
                 >
-                  <p>Primero malla una geometría</p>
-                  <p>Luego simula</p>
+                  <p>→Primero malla una geometría</p>
+                  <p>→Luego simula</p>
                 </div>
               </div>
 
@@ -429,13 +458,14 @@ function App() {
           </div>
         </Slide>
 
-        <Slide backgroundVideo="brittle.mp4">
+        <Slide backgroundVideo="brittle.mp4" backgroundVideoLoop={true}>
           <div
             style={{
-              backgroundColor: "#fff",
+              width: "100%",
+              textAlign: "end"
             }}
           >
-            <h2>muchas Gracias</h2>
+            <h2>muchas <br/> Gracias</h2>
             <p>por escuchar</p>
           </div>
         </Slide>
