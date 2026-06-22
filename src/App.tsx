@@ -104,7 +104,7 @@ function App() {
               src="curve.png"
               alt=""
               style={{
-                width: "50vw",
+                width: "30vw",
               }}
             />
           </Slide>
@@ -222,14 +222,13 @@ function App() {
 
             <div
               style={{
-                width: "50vw",
                 display: "flex",
                 justifyContent: "space-evenly",
                 alignItems: "center",
               }}
             >
-              <img src="sanchez.png" alt="" />
-              <img src="sanchez2.png" alt="" style={{ height: "300px" }} />
+              <img src="sanchez.png" alt="" style={{width: "60%"}}/>
+              <img src="sanchez2.png" alt="" style={{width: "40%" }} />
             </div>
           </div>
         </Slide>
@@ -254,7 +253,7 @@ function App() {
                 src="types.png"
                 alt=""
                 style={{
-                  width: "50vw",
+                  width: "50%",
                 }}
               />
             </div>
@@ -318,8 +317,8 @@ function App() {
                   justifyContent: "space-evenly",
                 }}
               >
-                <img style={{ width: "30vw" }} src="geometry.png" alt="" />
-                <img style={{ width: "30vw" }} src="mesh.png" alt="" />
+                <img style={{ width: "30%" }} src="geometry.png" alt="" />
+                <img style={{ width: "30%" }} src="mesh.png" alt="" />
               </div>
             </div>
           </div>
@@ -415,11 +414,11 @@ function App() {
                 alignItems: "center",
               }}
             >
-              <img style={{ width: "30vw" }} src="sanchez.png" alt="" />
+              <img style={{ width: "30%" }} src="sanchez.png" alt="" />
               <p>!=</p>
               <img
                 style={{
-                  width: "30vw",
+                  width: "30%",
                   filter: "blur(6px) grayscale(1)",
                 }}
                 src="sanchez.png"
